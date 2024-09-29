@@ -1,0 +1,19 @@
+
+# Name of Workflow
+name: First Workflow
+# Define when the Worlflow will be executed wirth the on key.  workflow_dispatch allows the user to manually trigger the workflow
+on: workflow_dispatch
+# Define the work that should be done
+jobs:
+  #give the job a name
+  first-job: 
+    # Define the runner the job will execute the stetps with the runs-on key and define the environment
+    runs-on: ubuntu-lateat
+    # Define the steps
+    steps:
+      # name of the step
+      - name: Print greeting
+        # what the step executes
+        run: echo "Hellow World"
+      - name: Print goodbye
+        run: echo "Done - bye!"
