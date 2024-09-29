@@ -8,7 +8,7 @@ jobs:
   #give the job a name
   first-job: 
     # Define the runner the job will execute the stetps with the runs-on key and define the environment
-    runs-on: ubuntu-lateat
+    runs-on: ubuntu-latest
     # Define the steps
     steps:
       # name of the step
